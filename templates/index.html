@@ -5,6 +5,9 @@
 </head>
 <body>
     <h1>GitHub Activity Viewer</h1>
-    <p>Enter a username to see their recent activity.</p>
+    <form action="/activity" method="get">
+        <input type="text" name="username" placeholder="Enter GitHub username">
+        <button type="submit">Search</button>
+    </form>
 </body>
 </html>
