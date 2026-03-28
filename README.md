@@ -1,4 +1,4 @@
-# flask-intro
+# GitHub Activity Web Viewer
 
 This was my first ever Flask project, created as a learning exercise to understand the basics of web development with Flask. The application allows users to enter a GitHub username and view their recent activity, such as commits, pull requests, and issues. The fetching of GitHub data is done with the same code as in the [`github-activityCLI`](https://github.com/apathydevil/github-activityCLI) project, but here it's integrated into a web interface.
 
