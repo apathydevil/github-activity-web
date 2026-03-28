@@ -25,6 +25,8 @@ def activity():
                 processed.append(f"Forked {event['repo']['name']} at {timestamp}")
             else:
                 processed.append(f"{event['type']} in {event['repo']['name']} at {timestamp}")
+        if not processed:
+            processed.append("No recent activity found.")
         return render_template("activity.html", username=username, events=processed)
     else:
         return render_template("activity.html", username=username, events=["No data available."])
